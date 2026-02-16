@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "about": "O mně",
+    "projects": "Projekty",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "main": {
+    "header2": "Něco o mně",
+    "paragraph1": "Jsem programátor a student na střední škole Creative Hill College ve Zlíně. Aktuálně mám",
+    "paragraph1_2": "let.",
+    "header2_2": "Já a Programování",
+    "paragraph2": "Aktuálně se věnuji programování v jazycích JavaScript, TypeScript, Java a C#. Mám zkušenosti s frameworky jako Nuxt.js a Vue.js. Rád se učím nové technologie a pracuji na zajímavých projektech."    
+}
+}

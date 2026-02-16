@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/i18n'
   ],
 
   devtools: {
@@ -24,5 +25,25 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  i18n: {
+    strategy: 'prefix_except_default', // Přidá /en/ do URL, ale pro češtinu (default) ne
+    defaultLocale: 'cs',
+    locales: [
+      {
+        code: 'cs',
+        iso: 'cs-CZ',
+        name: 'Čeština',
+        file: 'cs.json'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        file: 'en.json'
+      }
+    ],
+    langDir: 'locales/', 
   }
 })

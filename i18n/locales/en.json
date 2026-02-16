@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "about": "About me",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "main": {
+    "header2": "Something about me",
+    "paragraph1": "I am a programmer and a student at Creative Hill College in Zlín. Currently, I am ",
+    "paragraph1_2": "years old.",
+    "header2_2": "Me and Programming",
+    "paragraph2": "Currently, I am focused on programming in JavaScript, TypeScript, Java, and C#. I have experience with frameworks like Nuxt.js and Vue.js. I enjoy learning new technologies and working on interesting projects."    
+  }
+}

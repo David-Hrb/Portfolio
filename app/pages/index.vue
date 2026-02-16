@@ -1,76 +1,72 @@
 <template>
   <div>
-    <UPageHero
-      title="Nuxt Starter Template"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
-      :links="[{
-        label: 'Get started',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-        target: '_blank',
-        trailingIcon: 'i-lucide-arrow-right',
-        size: 'xl'
-      }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-templates/starter',
-        target: '_blank',
-        icon: 'i-simple-icons-github',
-        size: 'xl',
-        color: 'neutral',
-        variant: 'subtle'
-      }]"
-    />
+    <section class="min-h-screen pt-32 pb-16 flex items-center justify-center">
+    <UContainer class="max-w-6xl w-[90%] md:w-[80%]">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
+        
+        <div class="flex-1 space-y-6 order-2 lg:order-1 text-center lg:text-left">
+          <header class="space-y-2">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tighter text-[#E0E0E0]">
+              David Hrbáček
+            </h1>
+            <h2 class="text-primary-500 text-xl md:text-2xl font-medium tracking-wide">
+              {{ $t('main.header2') }} 
+            </h2>
 
-    <UPageSection
-      id="features"
-      title="Everything you need to build modern Nuxt apps"
-      description="Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system."
-      :features="[{
-        icon: 'i-lucide-rocket',
-        title: 'Production-ready from day one',
-        description: 'Pre-configured with TypeScript, ESLint, Tailwind CSS, and all the best practices. Focus on building features, not setting up tooling.'
-      }, {
-        icon: 'i-lucide-palette',
-        title: 'Beautiful by default',
-        description: 'Leveraging Nuxt UI\'s design system with automatic dark mode, consistent spacing, and polished components that look great out of the box.'
-      }, {
-        icon: 'i-lucide-zap',
-        title: 'Lightning fast',
-        description: 'Optimized for performance with SSR/SSG support, automatic code splitting, and edge-ready deployment. Your users will love the speed.'
-      }, {
-        icon: 'i-lucide-blocks',
-        title: '100+ components included',
-        description: 'Access Nuxt UI\'s comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.'
-      }, {
-        icon: 'i-lucide-code-2',
-        title: 'Developer experience first',
-        description: 'Auto-imports, hot module replacement, and TypeScript support. Write less boilerplate and ship more features.'
-      }, {
-        icon: 'i-lucide-shield-check',
-        title: 'Built for scale',
-        description: 'Enterprise-ready architecture with proper error handling, SEO optimization, and security best practices built-in.'
-      }]"
-    />
+            <p class="text-[#B0B0B0] text-justify leading-relaxed text-lg italic mb-4">
+              {{ $t('main.paragraph1') }} 
+              {{ myAge() }}  
+              {{ $t('main.paragraph1_2')  }}
+            </p>
+          </header>
 
-    <UPageSection>
-      <UPageCTA
-        title="Ready to build your next Nuxt app?"
-        description="Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today."
-        variant="subtle"
-        :links="[{
-          label: 'Start building',
-          to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-          target: '_blank',
-          trailingIcon: 'i-lucide-arrow-right',
-          color: 'neutral'
-        }, {
-          label: 'View on GitHub',
-          to: 'https://github.com/nuxt-ui-templates/starter',
-          target: '_blank',
-          icon: 'i-simple-icons-github',
-          color: 'neutral',
-          variant: 'outline'
-        }]"
-      />
-    </UPageSection>
+          <div class="bg-[#1E1E1E]/40 border border-[#333333] backdrop-blur-md p-6 md:p-8 rounded-3xl shadow-xl">
+            <h2 class="text-primary-500 text-xl md:text-2xl font-medium tracking-wide"><code>&lt;/&gt;</code> {{ $t('main.header2_2') }}</h2>
+            <div class="flex items-start gap-4">
+              <p class="text-[#E0E0E0] text-justify leading-relaxed">
+                {{ $t('main.paragraph2') }}
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+            <UButton size="xl" color="primary" class="cursor-pointer" variant="solid" :label="$t('nav.projects')" />
+            <UButton size="xl" color="primary" class="cursor-pointer" variant="solid" :label="$t('nav.contact')" />
+          </div>
+        </div>
+
+        <div class="flex-1 order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div class="relative group">
+            <div class="absolute -inset-4 bg-primary-500/20 rounded-full blur-3xl group-hover:bg-primary-500/30 transition-all duration-500"></div>
+            
+           <div class="group relative w-64 h-64 md:w-120 md:h-120 overflow-hidden rounded-full border-2 border-[#333333] hover:border-primary-500 transition-all duration-500 shadow-2xl">
+              <img 
+                src="/images/ja.jpg" 
+                alt="David Hrbáček" 
+                class="w-full h-full object-top object-cover transition-all duration-700 scale-105 group-hover:scale-110 grayscale-0 [@media(hover:hover)]:grayscale group-hover:grayscale-0"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </UContainer>
+  </section>
   </div>
 </template>
+
+<script setup lang="ts">
+const { t, locale, locales, setLocale } = useI18n()
+const localePath = useLocalePath()
+
+function myAge() {
+  const today = new Date();
+  const birthDate = new Date('2008-08-02');
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age
+}
+</script>
