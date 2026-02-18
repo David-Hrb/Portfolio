@@ -45,5 +45,10 @@ export default defineNuxtConfig({
       }
     ],
     langDir: 'locales/', 
+  },
+  nitro: {
+    prerender: {
+      routes: ['/data/projekty.json']
+    }
   }
 })

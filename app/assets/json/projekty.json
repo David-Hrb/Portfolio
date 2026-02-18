@@ -4,7 +4,7 @@
         "title": "Racing Simulator",
         "description": "Racing Simulator is a racing game developed in Unity. It features realistic physics and a variety of cars and tracks to choose from.",
         "technologies": ["Nuxt.js", "Vue.js", "JavaScript", "TypeScript", "SQLite", "SCSS", "CSS"],
-        "pictures": ["racing_simulator_1.png", "racing_simulator_2.png"],
+        "pictures": ["ja.jpg"],
         "links": {
             "github": "https://github.com/David-Hrb/Racing-Manager-2025-Klauzurni-Prace-Javascript"
         }
@@ -13,7 +13,7 @@
         "title": "Portfolio",
         "description": "This portfolio website is built using Nuxt.js and Vue.js. It showcases my projects, skills, and experience in programming.",
         "technologies": ["Nuxt.js", "Vue.js", "JavaScript", "TypeScript", "Tailwind CSS"],
-        "pictures": ["portfolio_1.png", "portfolio_2.png"],
+        "pictures": ["ja.jpg"],
         "links": {
             "github": "https://github.com/David-Hrb/Portfolio"
         }
@@ -22,7 +22,7 @@
         "title": "The Shimmer",
         "description": "The Shimmer is a 2D platformer game developed in Unity. It features a unique art style and challenging gameplay.",
         "technologies": ["Unity", "C#", "ShaderLab", "Pixel Art"],
-        "pictures": ["the_shimmer_1.png", "the_shimmer_2.png"],
+        "pictures": ["ja.jpg"],
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         }

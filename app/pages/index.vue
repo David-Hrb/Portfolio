@@ -239,7 +239,7 @@
                         :src="getTechIcon(tech)"
                         :alt="tech"
                         class="w-4 h-4 object-contain"
-                        @error="handleImgError"
+                        @error="(e) => (e.target as HTMLImageElement).style.display = 'none'"
                       />
                       <span class="text-[10px] uppercase tracking-wider font-semibold text-gray-400">{{ tech }}</span>
                     </div>
@@ -263,6 +263,7 @@
                       class="text-xs font-bold uppercase tracking-widest text-[#E0E0E0] hover:text-primary-500 transition-all relative group"
                     >
                       {{ $t('Projects.moreText') }}
+                      <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all group-hover:w-full"></span>
                     </NuxtLink>
                   </div>
                 </div>
@@ -300,24 +301,15 @@ interface Projekt {
   }
 }
 
-const selectedProjects = ref<Projekt[]>([])
+import projektyData from '~/assets/json/projekty.json'
+const data = ref<Projekt[]>(projektyData)
+const selectedProjects = computed(() => {
+  if (!data.value) return []
 
-const { data } = await useFetch<Projekt[]>('/data/projekty.json')
-
-onMounted(() => {
-  if (data.value) {
-    selectedProjects.value = [...data.value]
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 3)
-  }
+  return [...data.value]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3)
 })
-
-const handleImgError = (e: Event) => {
-  const target = e.target as HTMLImageElement;
-  if (target) {
-    target.style.display = 'none';
-  }
-}
 
 function myAge() {
   const today = new Date();
