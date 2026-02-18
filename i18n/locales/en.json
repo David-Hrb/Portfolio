@@ -29,7 +29,9 @@
         }
     },
     "Projects": {
-        "header": "My Projects"
+        "header": "My Projects",
+        "moreText": "More about the project",
+        "buttonText": "Show all projects"
     }
 
 }

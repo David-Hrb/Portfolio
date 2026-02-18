@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: 'prefix_except_default', // Přidá /en/ do URL, ale pro češtinu (default) ne
+    strategy: 'prefix_except_default', 
     defaultLocale: 'cs',
     locales: [
       {

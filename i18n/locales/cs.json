@@ -29,7 +29,9 @@
         }
     },
     "Projects": {
-        "header": "Moje Projekty"
+        "header": "Moje Projekty",
+        "moreText": "Více o projektu",
+        "buttonText": "Zobrazit všechny projekty"
     }
 
 }
