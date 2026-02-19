@@ -108,9 +108,9 @@ const isMobileMenuOpen = ref(false)
 // Navigace jako computed, aby reagovala na změnu jazyka t()
 const navLinks = computed(() => [
   { name: t('nav.about'), path: '/' },
-  { name: t('nav.projects'), path: '/' },
-  { name: t('nav.blog'), path: '/' },
-  { name: t('nav.contact'), path: '/' }
+  { name: t('nav.projects'), path: '/projekty' },
+  { name: t('nav.blog'), path: '/projekty' },
+  { name: t('nav.contact'), path: '/projekty' }
 ])
 
 const handleScroll = () => {

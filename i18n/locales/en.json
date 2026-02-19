@@ -13,7 +13,7 @@
         "paragraph2": "Currently, I am focused on programming in JavaScript, TypeScript, Java, and C#. I have experience with frameworks like Nuxt.js and Vue.js. I enjoy learning new technologies and working on interesting projects."    
     },
     "lang": {
-        "header": "Programming Languages and technologies I use",
+        "header": "Programming Languages, Technologies and Programs I know",
         "skills": {
             "frontend": "Frontend",
             "backend": "Backend",
@@ -30,8 +30,23 @@
     },
     "Projects": {
         "header": "My Projects",
-        "moreText": "More about the project",
-        "buttonText": "Show all projects"
+        "paragraph": "Some projects I have created.",
+        "moreText": "View project",
+        "buttonText": "Show all projects",
+        "list": {
+            "racing_sim": {
+                "title": "Motorsport Manager",
+                "description": "Motorsport Manager is a racing game developed in Unity. It features realistic physics and a variety of cars and tracks to choose from."
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "description": "This portfolio website is built using Nuxt.js and Vue.js. It showcases my projects, skills, and experience in programming."
+            },
+            "shimmer": {
+                "title": "The Shimmer",
+                "description": "The Shimmer is a 2D platformer game developed in Unity. It features a unique art style and challenging gameplay."
+            }
+        }
     }
 
 }

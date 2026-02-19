@@ -1,31 +1,32 @@
 [
-
     {
-        "title": "Racing Simulator",
-        "description": "Racing Simulator is a racing game developed in Unity. It features realistic physics and a variety of cars and tracks to choose from.",
+        "id": "racing_simulator",
+        "title_key": "Projects.list.racing_sim.title",
+        "desc_key": "Projects.list.racing_sim.description",
         "technologies": ["Nuxt.js", "Vue.js", "JavaScript", "TypeScript", "SQLite", "SCSS", "CSS"],
-        "pictures": ["ja.jpg"],
+        "pictures": ["racingmanager.webp"],
         "links": {
             "github": "https://github.com/David-Hrb/Racing-Manager-2025-Klauzurni-Prace-Javascript"
         }
     },
     {
-        "title": "Portfolio",
-        "description": "This portfolio website is built using Nuxt.js and Vue.js. It showcases my projects, skills, and experience in programming.",
+        "id": "portfolio",
+        "title_key": "Projects.list.portfolio.title",
+        "desc_key": "Projects.list.portfolio.description",
         "technologies": ["Nuxt.js", "Vue.js", "JavaScript", "TypeScript", "Tailwind CSS"],
-        "pictures": ["ja.jpg"],
+        "pictures": ["portfolio.png"],
         "links": {
             "github": "https://github.com/David-Hrb/Portfolio"
         }
     },
     {
-        "title": "The Shimmer",
-        "description": "The Shimmer is a 2D platformer game developed in Unity. It features a unique art style and challenging gameplay.",
+        "id": "the_shimmer",
+        "title_key": "Projects.list.shimmer.title",
+        "desc_key": "Projects.list.shimmer.description",
         "technologies": ["Unity", "C#", "ShaderLab", "Pixel Art"],
-        "pictures": ["ja.jpg"],
+        "pictures": ["Shimmer.webp"],
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         }
     }
-    
 ]

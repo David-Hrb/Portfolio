@@ -13,25 +13,42 @@
         "paragraph2": "Aktuálně se věnuji programování v jazycích JavaScript, TypeScript, Java a C#. Mám zkušenosti s frameworky jako Nuxt.js a Vue.js. Rád se učím nové technologie a pracuji na zajímavých projektech."    
     },
     "lang": {
-        "header": "Programovací Jazyky a Technologie ve kterých se pohybuji",
+        "header": "Programovací Jazyky, Technologie a Programy ve kterých se pohybuji",
         "skills": {
             "frontend": "Frontend",
             "backend": "Backend",
             "database": "Databáze",
             "others": "Ostatní",
             "levels": {
-            "1": "Začátečník",
-            "2": "Mírně pokročilý",
-            "3": "Pokročilý",
-            "4": "Expert",
-            "unknown": "Neznámé"
+                "1": "Začátečník",
+                "2": "Mírně pokročilý",
+                "3": "Pokročilý",
+                "4": "Expert",
+                "unknown": "Neznámé"
             }
         }
     },
     "Projects": {
         "header": "Moje Projekty",
+        "paragraph": "Nějaké projekty, které jsem vytvořil.",
         "moreText": "Více o projektu",
-        "buttonText": "Zobrazit všechny projekty"
+        "buttonText": "Zobrazit všechny projekty",
+        "list": {
+            "racing_sim": {
+                "title": "Motorsport Manager",
+                "description": "Motorsport Manager je závodní hra vyvinutá v Unity. Nabízí realistickou fyziku a široký výběr aut a tratí."
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "description": "Tento web je postaven na Nuxt.js a Vue.js. Prezentuje mé projekty, dovednosti a zkušenosti v programování."
+            },
+            "shimmer": {
+                "title": "The Shimmer",
+                "description": "The Shimmer je 2D plošinovka vytvořená v Unity. Vyznačuje se unikátním stylem a náročnou hratelností."
+            }
+        }
+    },
+    "Contact": {
+        "header": "Kontaktujte mě"
     }
-
 }
