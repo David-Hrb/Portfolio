@@ -32,11 +32,11 @@
         "header": "My Projects",
         "paragraph": "Some projects I have created.",
         "moreText": "View project",
-        "buttonText": "Show all projects",
+        "buttonText": "All projects",
         "list": {
             "racing_sim": {
                 "title": "Motorsport Manager",
-                "description": "Motorsport Manager is a racing game developed in Unity. It features realistic physics and a variety of cars and tracks to choose from."
+                "description": "Motorsport Manager is a simulator of motorsport created in Nuxt.js and SQLite. It is a game that currently works on localhost."
             },
             "portfolio": {
                 "title": "Portfolio",
@@ -44,9 +44,34 @@
             },
             "shimmer": {
                 "title": "The Shimmer",
-                "description": "The Shimmer is a 2D platformer game developed in Unity. It features a unique art style and challenging gameplay."
+                "description": "The Shimmer is a 2D platformer game created in Unity. It is a school project for Creative Hill College and is based on the film Annihilation. It is an RPG/JRPG game."
             }
+        },
+        "filters": {
+            "web": "Web Applications",
+            "game": "Game Development",
+            "open_source": "Open Source",
+            "school": "School Projects",
+            "desktop": "Desktop Applications",
+            "mobile": "Mobile Applications",
+            "design": "UI/UX Design",
+            "scripts": "Scripts",
+            "security": "Cybersecurity",
+            "ai": "AI & Data",
+            "hardware": "Hardware/IoT",
+            "other": "Other"
         }
+    },
+    "Contact": {
+        "header": "Contact me",
+        "paragraph": "I would be happy if you contact me for any reason. If you have an interesting project that I could work on, or just want to get in touch, feel free to contact me.",
+        "buttonText": "Get in touch"
+    },
+    "Footer": {
+        "header": "Portfolio - David Hrbáček",
+        "description": "here description, desc",
+        "connectMe": "Connect with me",
+        "rights": "All rights reserved",
+        "design": "Designed and built by me with Nuxt.js and Tailwind CSS."
     }
-
 }

@@ -1,7 +1,7 @@
 <template>
   <nav 
     :class="[
-      'fixed top-0 left-0 right-0 z-[50] transition-all duration-500',
+      'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
       isScrolled ? 'py-3' : 'py-5'
     ]"
   >
@@ -97,20 +97,16 @@
 </template>
 
 <script setup lang="ts">
-
-// i18n composables
 const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 
-// Navigace jako computed, aby reagovala na změnu jazyka t()
 const navLinks = computed(() => [
-  { name: t('nav.about'), path: '/' },
+  { name: t('nav.about'), path: '/aboutme' },
   { name: t('nav.projects'), path: '/projekty' },
-  { name: t('nav.blog'), path: '/projekty' },
-  { name: t('nav.contact'), path: '/projekty' }
+  { name: t('nav.contact'), path: '/kontakt' }
 ])
 
 const handleScroll = () => {

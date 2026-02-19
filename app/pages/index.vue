@@ -30,8 +30,19 @@
             </div>
 
             <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
-              <UButton size="xl" color="primary" class="cursor-pointer" variant="solid" :label="$t('nav.projects')" />
-              <UButton size="xl" color="primary" class="cursor-pointer" variant="solid" :label="$t('nav.contact')" />
+              <NuxtLink 
+                :to="localePath('/projekty')" 
+                class="inline-flex items-center justify-center px-6 py-3 bg-primary text-text-bright font-bold uppercase border border-[#333333] tracking-widest text-sm rounded-lg hover:bg-primary-600 hover:scale-105 transition-all duration-300"
+              >
+                {{ $t('nav.projects') }}
+              </NuxtLink>
+
+              <NuxtLink 
+                :to="localePath('/kontakt')" 
+                class="inline-flex items-center justify-center px-6 py-3 bg-primary text-text-bright font-bold uppercase border border-[#333333] tracking-widest text-sm rounded-lg hover:bg-primary-600 hover:scale-105 transition-all duration-300"
+              >
+                {{ $t('nav.contact') }}
+              </NuxtLink>
             </div>
           </div>
 
@@ -41,7 +52,7 @@
               
             <div class="group relative w-64 h-64 md:w-120 md:h-120 overflow-hidden rounded-full border-2 border-[#333333] hover:border-primary-500 transition-all duration-500 shadow-2xl">
                 <img 
-                  src="/images/ja.jpg" 
+                  :src="image" 
                   alt="David Hrbáček" 
                   class="w-full h-full object-top object-cover transition-all duration-700 scale-105 group-hover:scale-110 grayscale-0 [@media(hover:hover)]:grayscale group-hover:grayscale-0"
                 />
@@ -66,7 +77,7 @@
                 </div>
               </div>
 
-              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-gray-200">
+              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-primary">
                 <div 
                   v-for="item in sortedFrontend" 
                   :key="item.name" 
@@ -101,7 +112,7 @@
                 </div>
               </div>
 
-              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-gray-200">
+              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-primary">
                 <div 
                   v-for="item in sortedBackend" 
                   :key="item.name" 
@@ -136,7 +147,7 @@
                 </div>
               </div>
 
-              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-gray-200">
+              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-primary">
                 <div 
                   v-for="item in sortedDatabase" 
                   :key="item.name" 
@@ -171,7 +182,7 @@
                 </div>
               </div>
 
-              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-gray-200">
+              <div class="flex-1 border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pl-4 border-primary">
                 <div 
                   v-for="item in sortedOthers" 
                   :key="item.name" 
@@ -236,15 +247,15 @@
 
               <div class="flex flex-wrap gap-2">
                 <div
-                  v-for="tech in item.technologies"
-                  :key="tech"
+                  v-for="(tech, index) in item.technologies"
+                  :key="item.title_key + tech + index"
                   class="flex items-center gap-1.5 px-2 py-1 rounded-full border border-white/5 bg-white/5 hover:bg-white/10 transition-colors duration-200"
                 >
                   <img
+                    v-if="getTechIcon(tech)"
                     :src="getTechIcon(tech)"
                     :alt="tech"
                     class="w-4 h-4 object-contain"
-                    @error="(e) => (e.target as HTMLImageElement).style.display = 'none'"
                   />
                   <span class="text-[10px] uppercase tracking-wider font-semibold text-gray-400">{{ tech }}</span>
                 </div>
@@ -274,33 +285,58 @@
         </div>
         </div>
         <div class="flex justify-center mt-10">
-          <UButton
-            size="xl"
-            color="primary"
-            variant="ghost"
-            class="cursor-pointer text-text-bright text-2xl bg-white/5 border border-white/10 hover:bg-primary-500/10 hover:border-primary-500 transition-all duration-300"
-            :label="$t('Projects.buttonText')"
-          />
+            <NuxtLink 
+              :to="localePath('/kontakt')" 
+              class="inline-flex items-center justify-center px-8 py-5 rounded-full bg-[#E0E0E0] text-[#111111] font-bold uppercase tracking-widest text-md hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              {{ $t('Projects.buttonText') }} &#8594;
+            </NuxtLink>
+            
         </div>
          
       </UContainer>
    
     </section>
-    <section class="mt-10">
-      <UContainer class="max-w-6xl w-[90%] md:w-[80%] mb-20">
-        <h2 class="text-[#E0E0E0] text-2xl md:text-3xl font-medium tracking-wide">{{ $t('Contact.header') }}</h2>
+    <section class="bg-black/50 py-20">
+      <UContainer class="max-w-6xl w-[90%] md:w-[80%] mb-10 mt-10">
+        <div class="flex justify-center w-full">
+          <div class="w-full md:w-[70%] lg:w-[60%] flex flex-col items-center text-center gap-6 bg-[#1E1E1E]/60 backdrop-blur-md border border-white/5 p-8 md:p-12 rounded-2xl transition-all duration-500 hover:border-white/10">
+            
+            <h2 class="text-primary text-2xl md:text-4xl font-medium tracking-wide">
+              {{ $t('Contact.header') }}
+            </h2>
 
+            <p class="text-[#B0B0B0] leading-relaxed text-lg max-w-2xl">
+              {{ $t('Contact.paragraph') }}
+            </p>
+
+            <div class="mt-4">
+              <NuxtLink 
+                :to="localePath('/kontakt')" 
+                class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-[#E0E0E0] text-[#111111] font-bold uppercase tracking-widest text-sm hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg"
+              >
+                {{ $t('Contact.buttonText') }} &#8594;
+              </NuxtLink>
+            </div>
+
+          </div>
+        </div>
       </UContainer>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import image from '~/assets/images/ja.jpg'
 import projektyData from '~/assets/json/projekty.json'
 const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
+
 interface Projekt {
+  id?: string | number
   title: string
+  title_key: string
+  desc_key: string
   description: string
   technologies: string[]
   pictures?: string[]
@@ -309,11 +345,13 @@ interface Projekt {
     live?: string
   }
 }
-const data = ref<Projekt[]>(projektyData)
-const selectedProjects = computed(() => {
-  if (!data.value) return []
 
-  return [...data.value]
+const data = ref<Projekt[]>(projektyData)
+
+const selectedProjects = ref<Projekt[]>([])
+
+onMounted(() => {
+  selectedProjects.value = [...data.value]
     .sort(() => 0.5 - Math.random())
     .slice(0, 3)
 })
@@ -394,12 +432,6 @@ const backendSkills = ref<SkillItem[]>([
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
     skill: 2
   },
-  /*
-  {
-    name: 'Rust',
-    icon: '/images/rust.svg',
-    skill: 1
-  },*/
   {
     name: 'Python',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
@@ -415,20 +447,14 @@ const backendSkills = ref<SkillItem[]>([
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
     skill: 2
   }
-
 ])
+
 const databaseSkills = ref<SkillItem[]>([
   {
     name: 'MySQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
     skill: 2
   },
-  /*
-  {
-    name: 'PostgreSQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-    skill: 1
-  },*/
   {
     name: 'SQLite',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
@@ -474,7 +500,7 @@ const othersSkills = ref<SkillItem[]>([
   },
   {
     name: 'GitHub',
-    icon: 'images/github.svg',
+    icon: '/images/github.svg',  
     skill: 2
   },
   {
@@ -489,7 +515,7 @@ const othersSkills = ref<SkillItem[]>([
   },
   {
     name: 'Aseprite',
-    icon: 'images/Logo_Aseprite.svg',
+    icon: '/images/Logo_Aseprite.svg', 
     skill: 2
   },
 ])
@@ -540,19 +566,19 @@ const techIconMap: Record<string, string> = {
   'C#':           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
   'SQLite':       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
   'MySQL':        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+  'MariaDB':      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg',
   'Unity':        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
   'Git':          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   'Docker':       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   'Figma':        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
   'Build Tools':  'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
-  'PocketBase':    '/images/pocketbase.svg',
-  'ShaderLab':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
-  'Pixel Art':     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg'
+  'PocketBase':   '/images/pocketbase.svg',
+  'GitHub':       '/images/github.svg',
+  'ShaderLab':    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
+  'Pixel Art':    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg'
 }
 
-const getTechIcon = (tech: string): string => {
-  return techIconMap[tech] ?? ''
+const getTechIcon = (tech: string): string | null => {
+  return techIconMap[tech] ?? null
 }
-
-
 </script>

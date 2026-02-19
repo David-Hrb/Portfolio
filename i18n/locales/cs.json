@@ -31,12 +31,13 @@
     "Projects": {
         "header": "Moje Projekty",
         "paragraph": "Nějaké projekty, které jsem vytvořil.",
+        "paragraphFull": "Toto jsou moje projekty, které jsem vytvořil. Některé z nich jsou školní projekty, jiné jsou osobní projekty, na kterých jsem pracoval ve svém volném čase. Všechny projekty jsou vytvořeny s cílem zlepšit mé programovací dovednosti a získat zkušenosti s různými technologiemi.",
         "moreText": "Více o projektu",
-        "buttonText": "Zobrazit všechny projekty",
+        "buttonText": "Všechny projekty",
         "list": {
             "racing_sim": {
                 "title": "Motorsport Manager",
-                "description": "Motorsport Manager je závodní hra vyvinutá v Unity. Nabízí realistickou fyziku a široký výběr aut a tratí."
+                "description": "Motorsport Manager je simulátor Formule 1 vyvinutý v Nuxt.JS a SQLite. Je to hra, která aktuálně funguje na localhostu."
             },
             "portfolio": {
                 "title": "Portfolio",
@@ -44,11 +45,46 @@
             },
             "shimmer": {
                 "title": "The Shimmer",
-                "description": "The Shimmer je 2D plošinovka vytvořená v Unity. Vyznačuje se unikátním stylem a náročnou hratelností."
+                "description": "The Shimmer je 2D plošinovka vytvořená v Unity. Je to RPG/JRPG hra jako školní projekt pro Creative Hill College. Je to hra podle filmu Annihilation."
+            },
+            "str": {
+                "title": "Scan The Result",
+                "description": "Scan The Result je nástroj pro ukládání a vyhodnocování výsledků ze sportovních terčů SETA. Tento projekt jsem vytvořil jako první a Aktuálně na projektu nedělám, ale v budoucnu bych ho rád předělal do jiných jazyků"
+            },
+            "Old_portfolio": {
+                "title": "Staré Portfolio",
+                "description": "Toto je moje staré portfolio, které jsem vytvořil jako první verzi svého portfolia. Je postaveno na jazycích HTML, CSS a JavaScript. Toto portfolio jsem vytvořil pro školní projekt."
+            },
+            "Biathlon_Game": {
+                "title": "Biathlon Game",
+                "description": "Biathlon Game je jednoduchá 3D hra v Unity, kterou jsem vytvořil jako hra pro přijímací řízení do školy. Hra je založena na biatlonu a hráč musí střílet na terče a zároveň přeběhnout trať. Hra je vytvořena v Unity a je to můj první projekt, který jsem vytvořil v tomto enginu."
             }
+        },
+        "filters": {
+            "web": "Webové aplikace",
+            "game": "Vývoj her",
+            "open_source": "Open Source",
+            "school": "Školní projekty",
+            "desktop": "Desktopové aplikace",
+            "mobile": "Mobilní aplikace",
+            "design": "UI/UX Design",
+            "scripts": "Skripty",
+            "security": "Cybersecurity",
+            "ai": "AI & Data",
+            "hardware": "Hardware/IoT",
+            "other": "Ostatní"
         }
     },
     "Contact": {
-        "header": "Kontaktujte mě"
+        "header": "Kontaktujte mě",
+        "paragraph": "Budu rád když mě dále kontaktujete z jakýchkoliv důvodů. Pokud máte zajimavý projekt, na kterém bych mohl pracovat, nebo jen chcete navázat kontakt, neváhejte mě kontaktovat.",
+        "buttonText": "Napište mi"
+    },
+    "Footer": {
+        "header": "Portfólio - David Hrbáček",
+        "description": "Programátor, který rád tvoří zajímavé projekty a neustále se učí nové věci.",
+        "connectMe": "Spojte se se mnou",
+        "rights": "Všechna práva vyhrazena",
+        "design": "Navrženo a vytvořeno mnou v Nuxt.js a Tailwind CSS."
     }
 }
