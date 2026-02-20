@@ -8,7 +8,7 @@
         "links": {
             "github": "https://github.com/David-Hrb/Racing-Manager-2025-Klauzurni-Prace-Javascript"
         },
-        "filtrs": [1, 2, 4]
+        "filtrs": [1, 2, 4, 7]
     },
     {
         "id": "portfolio",
@@ -19,7 +19,7 @@
         "links": {
             "github": "https://github.com/David-Hrb/Portfolio"
         },
-        "filtrs": [1]
+        "filtrs": [1,7]
     },
     {
         "id": "the_shimmer",
@@ -30,7 +30,7 @@
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
-        "filtrs": [2, 4]
+        "filtrs": [2, 4, 7]
     },
     {
         "id": "Scan The Result",
@@ -41,7 +41,7 @@
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
-        "filtrs": [5]
+        "filtrs": [5, 7]
     },
     {
         "id": "Old Portfolio",
@@ -52,7 +52,7 @@
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
-        "filtrs": [1, 4]
+        "filtrs": [1, 4, 7]
     },
     {
         "id": "Biathlon Game",

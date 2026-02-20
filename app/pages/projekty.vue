@@ -91,15 +91,6 @@
           </div>
         </div>
       </div>
-
-      <div class="flex justify-center mt-16">
-        <NuxtLink 
-          :to="localePath('/kontakt')" 
-          class="inline-flex items-center justify-center px-8 py-5 rounded-full bg-[#E0E0E0] text-[#111111] font-bold uppercase tracking-widest text-md hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg"
-        >
-          {{ $t('Projects.buttonText') }} &#8594;
-        </NuxtLink>
-      </div>
     </UContainer>
   </section>
 </template>
@@ -138,7 +129,7 @@ const Filters = ref([
   { id: 8, name_key: 'Projects.filters.scripts' },
   { id: 9, name_key: 'Projects.filters.security' },
   { id: 10, name_key: 'Projects.filters.ai' },
-  { id: 11, name_key: 'Projects.filters.hardware' },
+ // { id: 11, name_key: 'Projects.filters.hardware' },
   { id: 12, name_key: 'Projects.filters.other' }
 ])
 

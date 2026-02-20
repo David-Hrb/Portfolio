@@ -65,7 +65,11 @@
     "Contact": {
         "header": "Contact me",
         "paragraph": "I would be happy if you contact me for any reason. If you have an interesting project that I could work on, or just want to get in touch, feel free to contact me.",
-        "buttonText": "Get in touch"
+        "buttonText": "Get in touch",
+        "email": "Email",
+        "phone": "Phone",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
     },
     "Footer": {
         "header": "Portfolio - David Hrbáček",

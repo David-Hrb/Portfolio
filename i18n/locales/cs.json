@@ -78,7 +78,16 @@
     "Contact": {
         "header": "Kontaktujte mě",
         "paragraph": "Budu rád když mě dále kontaktujete z jakýchkoliv důvodů. Pokud máte zajimavý projekt, na kterém bych mohl pracovat, nebo jen chcete navázat kontakt, neváhejte mě kontaktovat.",
-        "buttonText": "Napište mi"
+        "buttonText": "Napište mi",
+        "email": "E-mail",
+        "phone": "Telefon",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "messagelabel": "Zpráva",
+        "placeholder": "Napište mi zprávu...",
+        "submitLabel": "Odeslat",
+        "emailLabel": "Váš e-mail",
+        "successMessage": "Děkuji za vaši zprávu! Odezvu se vám co nejdříve."
     },
     "Footer": {
         "header": "Portfólio - David Hrbáček",
