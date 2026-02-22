@@ -261,8 +261,9 @@
                 </div>
               </div>
 
-              <div v-if="item.links?.github" class="flex mt-auto justify-between w-full pt-4">
+              <div class="flex mt-auto justify-between items-center w-full pt-4">
                 <a
+                  v-if="item.links?.github"
                   :href="item.links.github"
                   target="_blank"
                   class="flex items-center gap-2 text-xs font-semibold text-gray-400 hover:text-primary-400 transition-colors duration-200"
@@ -273,8 +274,10 @@
                   GitHub
                 </a>
 
+                <div v-else></div>
+
                 <NuxtLink 
-                  :to="localePath('/')" 
+                  :to="localePath(item.linktopage)" 
                   class="text-xs font-bold uppercase tracking-widest text-[#E0E0E0] hover:text-primary-500 transition-all relative group"
                 >
                   {{ $t('Projects.moreText') }} &#8594;

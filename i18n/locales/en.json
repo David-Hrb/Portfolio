@@ -63,13 +63,21 @@
         }
     },
     "Contact": {
-        "header": "Contact me",
-        "paragraph": "I would be happy if you contact me for any reason. If you have an interesting project that I could work on, or just want to get in touch, feel free to contact me.",
+        "header": "Contact Me",
+        "paragraph": "I would be happy to hear from you for any reason. Whether you have an interesting project for me to work on or just want to connect, don't hesitate to reach out.",
         "buttonText": "Get in touch",
         "email": "Email",
         "phone": "Phone",
         "linkedin": "LinkedIn",
-        "github": "GitHub"
+        "github": "GitHub",
+        "placeholder": "Write me a message...",
+        "submitLabel": "Send",
+        "emailLabel": "Your Email",
+        "messageLabel": "Your Message",
+        "successMessage": "Thank you for your message! I'll get back to you as soon as possible.",
+        "emailCopied": "Copied!",
+        "formError": "Something went wrong. Please try again.",
+        "emailPlaceholder": "name{'@'}domain.com"
     },
     "Footer": {
         "header": "Portfolio - David Hrbáček",
@@ -77,5 +85,44 @@
         "connectMe": "Connect with me",
         "rights": "All rights reserved",
         "design": "Designed and built by me with Nuxt.js and Tailwind CSS."
+    },
+    "error": {
+        "title404": "Page not found",
+        "titleGeneric": "Oops! Something went wrong",
+        "message": "I'm sorry, but this address either doesn't exist or an unexpected error occurred on the server.",
+        "backButton": "Back to home"
+    },
+    "about": {
+        "label": "About Me",
+        "heading": "Who am I?",
+        "intro": "I am a programmer and student at Creative Hill College in Zlín. Currently, I focus primarily on web technologies and software development, with experience in frameworks like Nuxt.js and Vue.js. I am constantly learning new things and working on new projects. Here is my story.",
+        "now": "Now",
+        "timeline": {
+            "t1": {
+                "tag": "Birth",
+                "title": "August 2, 2008",
+                "desc": "console.log('Hello World!')"
+            },
+            "t2": {
+                "tag": "Falling in love with gaming",
+                "title": "Gamer at heart",
+                "desc": "As a kid, I fell in love with games and always wanted to create one that matched my own imagination. Later, I started experimenting with Scratch, but I always aspired to work in a real game engine."
+            },
+            "t3": {
+                "tag": "First time in Unity",
+                "title": "My first Unity game and choosing a school",
+                "desc": "I started learning Unity and wanted to use my game as an admission project for Creative Hill College. I also built a website for the game. You can check it out in the projects section under 'Biathlon Game' – it's a project about a sport I truly enjoy."
+            },
+            "t4": {
+                "tag": "Creative Hill College",
+                "title": "High School – IT Major",
+                "desc": "I enrolled at Creative Hill College in Zlín, where I was first introduced to languages like Python and JavaScript. During my freshman year, I built my portfolio and later applied those skills over the summer on the 'Scan The Result' project. I also started learning professional tools like Photoshop and Illustrator."
+            },
+            "t5": {
+                "tag": "Expanding Web Development Skills",
+                "title": "Sophomore Year at Creative Hill College",
+                "desc": "In my second year, our task was to create a web application. This led me to the Nuxt.js framework, which I am constantly improving in. I've also started learning Java, SQL databases, and I'm further developing my JavaScript skills. Currently, I am working on a Unity game while continuing to master web tools and databases."
+            }
+        }
     }
 }

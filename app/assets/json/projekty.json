@@ -8,7 +8,9 @@
         "links": {
             "github": "https://github.com/David-Hrb/Racing-Manager-2025-Klauzurni-Prace-Javascript"
         },
-        "filtrs": [1, 2, 4, 7]
+        "filtrs": [1, 2, 4, 7],
+        "dateOfLastChange": "",
+        "linktopage": "/pages/"
     },
     {
         "id": "portfolio",
@@ -19,7 +21,10 @@
         "links": {
             "github": "https://github.com/David-Hrb/Portfolio"
         },
-        "filtrs": [1,7]
+        "filtrs": [1,7],
+        "dateOfLastChange": "",
+        "LinkToOnlinePage": "",
+        "linktopage": "/pages/"
     },
     {
         "id": "the_shimmer",
@@ -30,39 +35,51 @@
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
-        "filtrs": [2, 4, 7]
+        "filtrs": [2, 4, 7],
+        "dateOfLastChange": "",
+        "LinkToOnlinePage": "",
+        "linktopage": "/pages/"
     },
     {
         "id": "Scan The Result",
         "title_key": "Projects.list.str.title",
         "desc_key": "Projects.list.str.description",
         "technologies": ["Python", "JavaScript", "HTML", "CSS"],
-        "pictures": ["Shimmer.webp"],
+        "pictures": ["ScanTheResult.webp", "ScanTheResult2.webp", "ScanTheResult3.webp", "ScanTheResult4.webp", "ScanTheResult5.webp"],
         "links": {
-            "github": "https://github.com/maxikbe/TheShimmer"
+            "github": "https://github.com/David-Hrb/ScanTheResult"
         },
-        "filtrs": [5, 7]
+        "filtrs": [5, 7],
+        "dateOfLastChange": "",
+        "LinkToOnlinePage": "",
+        "linktopage": "/pages/"
     },
     {
         "id": "Old Portfolio",
         "title_key": "Projects.list.Old_portfolio.title",
         "desc_key": "Projects.list.Old_portfolio.description",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "pictures": ["Shimmer.webp"],
+        "pictures": ["oldPortfolio1.JPG", "oldPortfolio2.JPG", "oldPortfolio3.JPG"],
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
-        "filtrs": [1, 4, 7]
+        "filtrs": [1, 4, 7],
+        "dateOfLastChange": "",
+        "LinkToOnlinePage": "",
+        "linktopage": "/pages/"
     },
     {
         "id": "Biathlon Game",
         "title_key": "Projects.list.Biathlon_Game.title",
         "desc_key": "Projects.list.Biathlon_Game.description",
         "technologies": ["Unity", "C#", "3D Modeling"],
-        "pictures": ["Shimmer.webp"],
+        "pictures": ["biathlon.jpg", "biathlon1.png", "biathlon2.png", "biathlon3.png"],
         "links": {
-            "github": "https://github.com/maxikbe/TheShimmer"
+            
         },
-        "filtrs": [2, 4]
+        "filtrs": [2, 4],
+        "dateOfLastChange": "",
+        "LinkToOnlinePage": "",
+        "linktopage": "/pages/"
     }
 ]

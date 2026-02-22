@@ -41,7 +41,7 @@
             },
             "portfolio": {
                 "title": "Portfolio",
-                "description": "Tento web je postaven na Nuxt.js a Vue.js. Prezentuje mé projekty, dovednosti a zkušenosti v programování."
+                "description": "Tento web je postaven na Nuxt.js a Vue.js. Prezentuje mé projekty, dovednosti a zkušenosti v programování. Na tomto projektu se učím jazyk TypeScript."
             },
             "shimmer": {
                 "title": "The Shimmer",
@@ -49,7 +49,7 @@
             },
             "str": {
                 "title": "Scan The Result",
-                "description": "Scan The Result je nástroj pro ukládání a vyhodnocování výsledků ze sportovních terčů SETA. Tento projekt jsem vytvořil jako první a Aktuálně na projektu nedělám, ale v budoucnu bych ho rád předělal do jiných jazyků"
+                "description": "Scan The Result je nástroj pro ukládání a vyhodnocování výsledků ze sportovních terčů SETA. Tento projekt jsem vytvořil jako jeden z prvních a Aktuálně na projektu nedělám, ale v budoucnu bych ho rád předělal do jiných jazyků"
             },
             "Old_portfolio": {
                 "title": "Staré Portfolio",
@@ -83,17 +83,61 @@
         "phone": "Telefon",
         "linkedin": "LinkedIn",
         "github": "GitHub",
-        "messagelabel": "Zpráva",
         "placeholder": "Napište mi zprávu...",
         "submitLabel": "Odeslat",
         "emailLabel": "Váš e-mail",
-        "successMessage": "Děkuji za vaši zprávu! Odezvu se vám co nejdříve."
+        "messageLabel": "Vaše Zpráva",
+        "successMessage": "Děkuji za vaši zprávu! Ozvu se vám co nejdříve.",
+        "emailCopied": "Zkopírováno!",
+        "formError": "Něco se nepovedlo. Zkuste to prosím znovu.",
+        "emailPlaceholder": "nazev{'@'}domena.cz"
     },
     "Footer": {
         "header": "Portfólio - David Hrbáček",
         "description": "Programátor, který rád tvoří zajímavé projekty a neustále se učí nové věci.",
         "connectMe": "Spojte se se mnou",
         "rights": "Všechna práva vyhrazena",
-        "design": "Navrženo a vytvořeno mnou v Nuxt.js a Tailwind CSS."
+        "design": "Navrženo a vytvořeno mnou v Nuxt.js a Tailwind CSS.",
+        "emailCopied": "E-mail byl zkopírován do schránky!",
+        "copyError": "E-mail se nepodařilo zkopírovat."
+    },
+    "error": {
+        "title404": "Stránka nenalezena",
+        "titleGeneric": "Ups! Něco se pokazilo",
+        "message": "Omlouvám se, ale tato adresa buď neexistuje, nebo došlo k neočekávané chybě na serveru. Nejspíš se na stránce ještě pracuje a v budoucnu bude vytvořena.",
+        "backButton": "Zpět na hlavní stránku"
+    },
+    "about": {
+        "label": "O mně",
+        "heading": "Kdo jsem?",
+        "intro": "Jsem prográmator a student na střední škole Creative Hill College ve Zlíně. Aktuálně mám zkušenosti s hlavně webovými technologiemi a programováním. Mám zkušenosti s frameworky jako Nuxt.js a Vue.js. Neustále se učím novým věcím a pracuji na projektech. Zde je můj příběh.",
+        "now": "Teď",
+        "timeline": {
+            "t1": {
+                "tag": "Narození",
+                "title": "2. 8. 2008",
+                "desc": "console.log('Hello World!')"
+            },
+            "t2": {
+                "tag": "Zamilování do herního světa",
+                "title": "Hráč her",
+                "desc": "Jako malý jsem se zamiloval do her a vždycky jsem chtěl vytvořit hru, která by byla podle mích představ. Později jsem začal zkoušet Scratch, ale vždycky jsem chtěl umět v reálném enginu."
+            },
+            "t3": {
+                "tag": "Poprvé v Unity",
+                "title": "Moje první Unity hra a výběr školy",
+                "desc": "Začal jsem se učit Unity, hru jsem chtěl použít jako projekt na přijetí školu Creative Hill College. Ke hře jsem také vytvářel web. Hru si můžete prohlédnout v sekci projekty s název Biathlon hra, je to hra o sportu který mám rád."
+            },
+            "t4": {
+                "tag": "Creative Hill College",
+                "title": "Střední škola – IT obor",
+                "desc": "Nastoupil jsem na střední školu Creative Hill College ve Zlíně, kde jsem se poprvé setkal z jazyky jako Python, nebo JavaScript. První ročník jsem vytvořil svoje portfólio. Své zkušenosti jsem pak využil o prázdninách na projektu Scan The Result. Na škole jsem se taky začal učit práci s programy jako Photoshop, nebo Illustrátor."
+            },
+            "t5": {
+                "tag": "Rozvýjení ve webovém vývoji",
+                "title": "2. ročník na Creative Hill College",
+                "desc": "Ve 2. ročníku Creative Hill College jsme měli vytvořit webouvou aplikaci. Díky tomuto tématu jsem se naučil ve frameworku Nuxt.js, ve kterém se pořád zdokonaluji. Také jsem se začal učit jazyky jako Java, SQL Databáze a rozvíjím svoje schopnosti v jazyku JavaScript. Nyní pracuji na hře v Unity a pokračuji v učení webových nástrojů a databází."
+            }
+        }
     }
 }

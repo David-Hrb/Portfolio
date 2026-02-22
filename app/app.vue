@@ -29,5 +29,6 @@ useSeoMeta({
   <Background />
   <NavbarPanel />
   <NuxtPage />
-  <Foooter />
+  <UToaster />
+  <Footer />
 </template>
