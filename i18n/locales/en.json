@@ -1,128 +1,143 @@
 {
-    "nav": {
-        "about": "About me",
-        "projects": "Projects",
-        "blog": "Blog",
-        "contact": "Contact"
-    },
-    "main": {
-        "header2": "Something about me",
-        "paragraph1": "I am a programmer and a student at Creative Hill College in Zlín. Currently, I am ",
-        "paragraph1_2": "years old.",
-        "header2_2": "Me and Programming",
-        "paragraph2": "Currently, I am focused on programming in JavaScript, TypeScript, Java, and C#. I have experience with frameworks like Nuxt.js and Vue.js. I enjoy learning new technologies and working on interesting projects."    
-    },
-    "lang": {
-        "header": "Programming Languages, Technologies and Programs I know",
-        "skills": {
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "database": "Database",
-            "others": "Others",
-            "levels": {
-                "1": "Beginner",
-                "2": "Intermediate",
-                "3": "Advanced",
-                "4": "Expert",
-                "unknown": "Unknown"
-            }
-        }
-    },
-    "Projects": {
-        "header": "My Projects",
-        "paragraph": "Some projects I have created.",
-        "moreText": "View project",
-        "buttonText": "All projects",
-        "list": {
-            "racing_sim": {
-                "title": "Motorsport Manager",
-                "description": "Motorsport Manager is a simulator of motorsport created in Nuxt.js and SQLite. It is a game that currently works on localhost."
-            },
-            "portfolio": {
-                "title": "Portfolio",
-                "description": "This portfolio website is built using Nuxt.js and Vue.js. It showcases my projects, skills, and experience in programming."
-            },
-            "shimmer": {
-                "title": "The Shimmer",
-                "description": "The Shimmer is a 2D platformer game created in Unity. It is a school project for Creative Hill College and is based on the film Annihilation. It is an RPG/JRPG game."
-            }
-        },
-        "filters": {
-            "web": "Web Applications",
-            "game": "Game Development",
-            "open_source": "Open Source",
-            "school": "School Projects",
-            "desktop": "Desktop Applications",
-            "mobile": "Mobile Applications",
-            "design": "UI/UX Design",
-            "scripts": "Scripts",
-            "security": "Cybersecurity",
-            "ai": "AI & Data",
-            "hardware": "Hardware/IoT",
-            "other": "Other"
-        }
-    },
-    "Contact": {
-        "header": "Contact Me",
-        "paragraph": "I would be happy to hear from you for any reason. Whether you have an interesting project for me to work on or just want to connect, don't hesitate to reach out.",
-        "buttonText": "Get in touch",
-        "email": "Email",
-        "phone": "Phone",
-        "linkedin": "LinkedIn",
-        "github": "GitHub",
-        "placeholder": "Write me a message...",
-        "submitLabel": "Send",
-        "emailLabel": "Your Email",
-        "messageLabel": "Your Message",
-        "successMessage": "Thank you for your message! I'll get back to you as soon as possible.",
-        "emailCopied": "Copied!",
-        "formError": "Something went wrong. Please try again.",
-        "emailPlaceholder": "name{'@'}domain.com"
-    },
-    "Footer": {
-        "header": "Portfolio - David Hrbáček",
-        "description": "here description, desc",
-        "connectMe": "Connect with me",
-        "rights": "All rights reserved",
-        "design": "Designed and built by me with Nuxt.js and Tailwind CSS."
-    },
-    "error": {
-        "title404": "Page not found",
-        "titleGeneric": "Oops! Something went wrong",
-        "message": "I'm sorry, but this address either doesn't exist or an unexpected error occurred on the server.",
-        "backButton": "Back to home"
-    },
-    "about": {
-        "label": "About Me",
-        "heading": "Who am I?",
-        "intro": "I am a programmer and student at Creative Hill College in Zlín. Currently, I focus primarily on web technologies and software development, with experience in frameworks like Nuxt.js and Vue.js. I am constantly learning new things and working on new projects. Here is my story.",
-        "now": "Now",
-        "timeline": {
-            "t1": {
-                "tag": "Birth",
-                "title": "August 2, 2008",
-                "desc": "console.log('Hello World!')"
-            },
-            "t2": {
-                "tag": "Falling in love with gaming",
-                "title": "Gamer at heart",
-                "desc": "As a kid, I fell in love with games and always wanted to create one that matched my own imagination. Later, I started experimenting with Scratch, but I always aspired to work in a real game engine."
-            },
-            "t3": {
-                "tag": "First time in Unity",
-                "title": "My first Unity game and choosing a school",
-                "desc": "I started learning Unity and wanted to use my game as an admission project for Creative Hill College. I also built a website for the game. You can check it out in the projects section under 'Biathlon Game' – it's a project about a sport I truly enjoy."
-            },
-            "t4": {
-                "tag": "Creative Hill College",
-                "title": "High School – IT Major",
-                "desc": "I enrolled at Creative Hill College in Zlín, where I was first introduced to languages like Python and JavaScript. During my freshman year, I built my portfolio and later applied those skills over the summer on the 'Scan The Result' project. I also started learning professional tools like Photoshop and Illustrator."
-            },
-            "t5": {
-                "tag": "Expanding Web Development Skills",
-                "title": "Sophomore Year at Creative Hill College",
-                "desc": "In my second year, our task was to create a web application. This led me to the Nuxt.js framework, which I am constantly improving in. I've also started learning Java, SQL databases, and I'm further developing my JavaScript skills. Currently, I am working on a Unity game while continuing to master web tools and databases."
-            }
-        }
+  "nav": {
+    "about": "About Me",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "main": {
+    "header2": "A Little About Me",
+    "paragraph1": "I am a programmer and a student at Creative Hill College in Zlín. I am currently",
+    "paragraph1_2": "years old.",
+    "header2_2": "My Programming Journey",
+    "paragraph2": "I am currently focusing on programming in JavaScript, TypeScript, Java, and C#. I have experience with frameworks such as Nuxt.js and Vue.js. I love learning new technologies and working on engaging projects."
+  },
+  "lang": {
+    "header": "Programming Languages, Technologies, and Tools I use",
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "others": "Others",
+      "levels": {
+        "1": "Beginner",
+        "2": "Intermediate",
+        "3": "Advanced",
+        "4": "Expert",
+        "unknown": "Unknown"
+      }
     }
+  },
+  "Projects": {
+    "header": "My Projects",
+    "paragraph": "A selection of projects I've built.",
+    "paragraphFull": "These are the projects I have created. Some are school assignments, while others are personal projects I've worked on in my free time. All of them were built with the goal of improving my programming skills and gaining experience with various technologies.",
+    "moreText": "Project details",
+    "buttonText": "All projects",
+    "list": {
+      "racing_sim": {
+        "title": "Motorsport Manager",
+        "description": "Motorsport Manager is a Formula 1 simulator developed using Nuxt.js and SQLite. It is a game that currently runs on localhost."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "This website is built on Nuxt.js and Vue.js. It showcases my projects, skills, and programming experience. I am also using this project to learn TypeScript."
+      },
+      "shimmer": {
+        "title": "The Shimmer",
+        "description": "The Shimmer is a 2D platformer created in Unity. It is an RPG/JRPG school project for Creative Hill College, inspired by the movie Annihilation."
+      },
+      "str": {
+        "title": "Scan The Result",
+        "description": "Scan The Result is a tool for storing and evaluating results from SETA sporting targets. It was one of my first projects; I am not currently active on it, but I plan to rewrite it in other languages in the future."
+      },
+      "Old_portfolio": {
+        "title": "Old Portfolio",
+        "description": "This is the first version of my portfolio, created as a school project. It is built using HTML, CSS, and JavaScript."
+      },
+      "Biathlon_Game": {
+        "title": "Biathlon Game",
+        "description": "A simple 3D game created in Unity as part of my school admission process. Based on biathlon, players must shoot targets while navigating the track. It was my very first project in this engine."
+      }
+    },
+    "filters": {
+      "web": "Web Apps",
+      "game": "Game Dev",
+      "open_source": "Open Source",
+      "school": "School Projects",
+      "desktop": "Desktop Apps",
+      "mobile": "Mobile Apps",
+      "design": "UI/UX Design",
+      "scripts": "Scripts",
+      "security": "Cybersecurity",
+      "ai": "AI & Data",
+      "hardware": "Hardware/IoT",
+      "other": "Other"
+    }
+  },
+  "Contact": {
+    "header": "Get in Touch",
+    "paragraph": "I'd be happy to hear from you for any reason. Whether you have an interesting project we could work on together or just want to connect, feel free to reach out.",
+    "buttonText": "Message me",
+    "email": "Email",
+    "phone": "Phone",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "placeholder": "Write your message here...",
+    "submitLabel": "Send",
+    "emailLabel": "Your Email",
+    "messageLabel": "Your Message",
+    "successMessage": "Thank you for your message! I'll get back to you as soon as possible.",
+    "emailCopied": "Copied!",
+    "formError": "Something went wrong. Please try again.",
+    "emailPlaceholder": "name{'@'}domain.com"
+  },
+  "Footer": {
+    "header": "Portfolio - David Hrbáček",
+    "description": "A programmer who loves building interesting projects and constantly learning new things.",
+    "connectMe": "Connect with me",
+    "rights": "All rights reserved",
+    "design": "Designed and built by me using Nuxt.js and Tailwind CSS.",
+    "emailCopied": "Email copied to clipboard!",
+    "copyError": "Failed to copy email."
+  },
+  "error": {
+    "title404": "Page Not Found",
+    "titleGeneric": "Oops! Something went wrong",
+    "message": "I'm sorry, but this address either doesn't exist or an unexpected server error occurred. The page might still be under construction.",
+    "backButton": "Back to Home"
+  },
+  "about": {
+    "label": "About Me",
+    "heading": "Who am I?",
+    "intro": "I am a programmer and a student at Creative Hill College in Zlín. I primarily focus on web technologies and software development. I have experience with frameworks like Nuxt.js and Vue.js, and I'm always learning new things through hands-on projects. Here is my story.",
+    "now": "Now",
+    "timeline": {
+      "t1": {
+        "tag": "Birth",
+        "title": "August 2, 2008",
+        "desc": "console.log('Hello World!')"
+      },
+      "t2": {
+        "tag": "Falling in love with games",
+        "title": "Gamer",
+        "desc": "As a kid, I fell in love with games and always wanted to create one exactly how I imagined it. I started with Scratch but always aspired to work in a professional engine."
+      },
+      "t3": {
+        "tag": "First steps in Unity",
+        "title": "My first Unity game and school choice",
+        "desc": "I started learning Unity and used my game as an admission project for Creative Hill College. I even built a website for it. You can find it in the projects section as 'Biathlon Game' – it's a project about a sport I love."
+      },
+      "t4": {
+        "tag": "Creative Hill College",
+        "title": "High School – IT Major",
+        "desc": "I started at Creative Hill College in Zlín, where I first encountered languages like Python and JavaScript. In my first year, I built my first portfolio. I later used these skills during the summer for the 'Scan The Result' project. I also began learning tools like Photoshop and Illustrator."
+      },
+      "t5": {
+        "tag": "Expanding Web Development",
+        "title": "2nd Year at Creative Hill College",
+        "desc": "During my second year, we were tasked with creating a web application. This led me to the Nuxt.js framework, which I continue to master. I've also started learning Java and SQL while further developing my JavaScript skills. Currently, I'm working on a Unity game and exploring more web tools and databases."
+      }
+    }
+  }
 }
