@@ -4,23 +4,17 @@ import projectsData from '~/assets/json/projekty.json'
 const { t } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
-
-// ID z URL: /projekty/racing_simulator -> route.params.id bude "racing_simulator"
 const projectId = route.params.id
-
-// Najdeme projekt v JSONu
 const project = projectsData.find(p => p.id === projectId)
 
-// Ošetření chyby, pokud projekt neexistuje
 if (!project) {
   throw createError({ 
     statusCode: 404, 
     statusMessage: 'Projekt nebyl nalezen',
-    fatal: true // Důležité pro Nuxt, aby chybu zobrazil správně
+    fatal: true 
   })
 }
 
-// SEO: Dynamický titulek stránky podle projektu
 useSeoMeta({
   title: () => t(project.title_key),
   description: () => t(project.desc_key)
@@ -32,8 +26,8 @@ useSeoMeta({
     <div class="max-w-4xl mx-auto">
       <NuxtLink 
         :to="localePath('/')" 
-        class="text-primary-500 hover:underline mb-8 inline-block"
-      >
+        class="text-md md:text-lg font-bold tracking-tighter text-[#E0E0E0] hover:text-primary-500 transition-all duration-300"
+        >
         ← {{ $t('Projects.backToList') || 'Zpět' }}
       </NuxtLink>
       
