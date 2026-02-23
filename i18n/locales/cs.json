@@ -39,27 +39,27 @@
         "list": {
             "racing_sim": {
                 "title": "Motorsport Manager",
-                "description": "Motorsport Manager je simulátor Formule 1 vyvinutý v Nuxt.JS a SQLite. Je to hra, která aktuálně funguje na localhostu."
+                "description": "Motorsport Manager je simulátor Formule 1 vyvinutý v Nuxt.JS a SQLite. Je to hra, která aktuálně funguje pouze na localhostu. Ve hře se ujímáte role managera motorsportového týmu. Dají se simulovat závody, podepisovat a vyměňovat jezdce, vylepšovat auto a mnoho dalšího. Hra byla vyvinuta jako školní projekt pro Creative Hill College."
             },
             "portfolio": {
                 "title": "Portfolio",
-                "description": "Tento web je postaven na Nuxt.js a Vue.js. Prezentuje mé projekty, dovednosti a zkušenosti v programování. Na tomto projektu se učím jazyk TypeScript."
+                "description": "Tento web je postaven na Nuxt.js a Vue.js. Prezentuje mé projekty, dovednosti a zkušenosti v programování. Na tomto projektu jsem poprvé použil jazyk TypeScript na frontend."
             },
             "shimmer": {
                 "title": "The Shimmer",
-                "description": "The Shimmer je 2D plošinovka vytvořená v Unity. Je to RPG/JRPG hra jako školní projekt pro Creative Hill College. Je to hra podle filmu Annihilation."
+                "description": "The Shimmer je 2D plošinovka vytvořená v Unity. Je to RPG/JRPG hra jako školní projekt pro Creative Hill College. Je to hra podle filmu Annihilation. Aktuálně je ve fázi vývoje. Na této hře pracuji s dalšíma dvěma lidmi."
             },
             "str": {
                 "title": "Scan The Result",
-                "description": "Scan The Result je nástroj pro ukládání a vyhodnocování výsledků ze sportovních terčů SETA. Tento projekt jsem vytvořil jako jeden z prvních a Aktuálně na projektu nedělám, ale v budoucnu bych ho rád předělal do jiných jazyků"
+                "description": "Scan The Result je nástroj pro ukládání a vyhodnocování výsledků ze sportovních terčů SETA. Tento projekt jsem vytvořil jako jeden z prvních a aktuálně na projektu nedělám, ale v budoucnosti bych ho rád předělal do jiných jazyků"
             },
             "Old_portfolio": {
                 "title": "Staré Portfolio",
-                "description": "Toto je moje staré portfolio, které jsem vytvořil jako první verzi svého portfolia. Je postaveno na jazycích HTML, CSS a JavaScript. Toto portfolio jsem vytvořil pro školní projekt."
+                "description": "Toto je moje staré portfolio, které jsem vytvořil jako první verzi svého portfolia. Je postaveno na jazycích HTML, CSS a JavaScript. Toto portfolio jsem vytvořil jako školní projekt."
             },
             "Biathlon_Game": {
                 "title": "Biathlon Game",
-                "description": "Biathlon Game je jednoduchá 3D hra v Unity, kterou jsem vytvořil jako hra pro přijímací řízení do školy. Hra je založena na biatlonu a hráč musí střílet na terče a zároveň přeběhnout trať. Hra je vytvořena v Unity a je to můj první projekt, který jsem vytvořil v tomto enginu."
+                "description": "Biathlon Game je jednoduchá 3D hra v Unity, kterou jsem vytvořil jako hru pro přijímací řízení do školy Creative Hill College. Hra je založena na biatlonu a hráč musí střílet na terče a zároveň přeběhnout trať. Hra je vytvořena v Unity a je to můj první projekt, který jsem vytvořil v tomto enginu."
             }
         },
         "filters": {
@@ -112,8 +112,8 @@
     "about": {
         "label": "O mně",
         "heading": "Kdo jsem?",
-        "intro": "Jsem prográmator a student na střední škole Creative Hill College ve Zlíně. Aktuálně mám zkušenosti s hlavně webovými technologiemi a programováním. Mám zkušenosti s frameworky jako Nuxt.js a Vue.js. Neustále se učím novým věcím a pracuji na projektech. Zde je můj příběh.",
-        "now": "Teď",
+        "intro": "Jsem prográmator a student na střední škole Creative Hill College ve Zlíně. Aktuálně mám zkušenosti hlavně s webovými technologiemi a programováním. Mám zkušenosti s frameworky jako Nuxt.js a Vue.js. Neustále se učím novým věcím a pracuji na projektech. Zde je můj příběh.",
+        "now": "Nyní",
         "timeline": {
             "t1": {
                 "tag": "Narození",

@@ -39,27 +39,27 @@
     "list": {
       "racing_sim": {
         "title": "Motorsport Manager",
-        "description": "Motorsport Manager is a Formula 1 simulator developed using Nuxt.js and SQLite. It is a game that currently runs on localhost."
+        "description": "Motorsport Manager is a Formula 1 simulator developed using Nuxt.js and SQLite. The game currently runs exclusively on localhost. In the game, you take on the role of a motorsport team manager, where you can simulate races, sign or swap drivers, upgrade your car, and much more. This game was developed as a school project for Creative Hill College."
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "This website is built on Nuxt.js and Vue.js. It showcases my projects, skills, and programming experience. I am also using this project to learn TypeScript."
+        "description": "This website is built with Nuxt.js and Vue.js. It showcases my projects, skills, and programming experience. This project marked my first time using TypeScript for frontend development."
       },
       "shimmer": {
         "title": "The Shimmer",
-        "description": "The Shimmer is a 2D platformer created in Unity. It is an RPG/JRPG school project for Creative Hill College, inspired by the movie Annihilation."
+        "description": "The Shimmer is a 2D platformer created in Unity. It is an RPG/JRPG school project for Creative Hill College based on the movie Annihilation. The game is currently in development, and I am working on it with two other people."
       },
       "str": {
         "title": "Scan The Result",
-        "description": "Scan The Result is a tool for storing and evaluating results from SETA sporting targets. It was one of my first projects; I am not currently active on it, but I plan to rewrite it in other languages in the future."
+        "description": "Scan The Result is a tool for saving and evaluating results from SETA sporting targets. This was one of my very first projects; while I am not currently active on it, I would like to rewrite it using different languages in the future."
       },
       "Old_portfolio": {
         "title": "Old Portfolio",
-        "description": "This is the first version of my portfolio, created as a school project. It is built using HTML, CSS, and JavaScript."
+        "description": "This is the first version of my portfolio, built using HTML, CSS, and JavaScript. I created this portfolio as a school project."
       },
       "Biathlon_Game": {
         "title": "Biathlon Game",
-        "description": "A simple 3D game created in Unity as part of my school admission process. Based on biathlon, players must shoot targets while navigating the track. It was my very first project in this engine."
+        "description": "Biathlon Game is a simple 3D Unity game I created as part of my entrance exams for Creative Hill College. The game is based on biathlon, requiring the player to shoot at targets while navigating a track. It was my first project ever created in the Unity engine."
       }
     },
     "filters": {
@@ -79,7 +79,7 @@
   },
   "Contact": {
     "header": "Get in Touch",
-    "paragraph": "I'd be happy to hear from you for any reason. Whether you have an interesting project we could work on together or just want to connect, feel free to reach out.",
+    "paragraph": "I'd be happy to hear anything from you for any reason. Whether you have an interesting project we could work on together or just want to connect, feel free to reach out.",
     "buttonText": "Message me",
     "email": "Email",
     "phone": "Phone",
@@ -112,7 +112,7 @@
   "about": {
     "label": "About Me",
     "heading": "Who am I?",
-    "intro": "I am a programmer and a student at Creative Hill College in Zlín. I primarily focus on web technologies and software development. I have experience with frameworks like Nuxt.js and Vue.js, and I'm always learning new things through hands-on projects. Here is my story.",
+    "intro": "I am a programmer and a student at Creative Hill College in Zlín. Currently, I primarily focus on web technologies and software development. I have experience with frameworks like Nuxt.js and Vue.js, and I'm always learning new things through hands-on projects. Here is my story.",
     "now": "Now",
     "timeline": {
       "t1": {

@@ -35,7 +35,7 @@
               </div>
 
               <div class="timeline-card glass-card rounded-2xl p-6 md:p-8 group">
-                <div class="flex items-start gap-4 mb-4">
+                <div class="flex items-start gap-4">
                   <div>
                     <span
                       class="text-[10px] uppercase tracking-widest font-bold px-2 py-0.5 rounded border mb-2 inline-block"
@@ -51,7 +51,7 @@
                 <p class="text-text-muted leading-relaxed text-sm">
                   {{ $t(event.desc) }}
                 </p>
-                <div v-if="event.techs" class="flex flex-wrap gap-2 mt-4">
+                <div v-if="event.techs" class="flex flex-wrap gap-2">
                   <span
                     v-for="tech in event.techs"
                     :key="tech"
