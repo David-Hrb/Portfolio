@@ -25,13 +25,13 @@ useSeoMeta({
   <main v-if="project" class="min-h-screen mt-32 text-white p-8">
     <div class="max-w-4xl mx-auto">
       <NuxtLink 
-        :to="localePath('/')" 
+        :to="localePath('/projekty')" 
         class="text-md md:text-lg font-bold tracking-tighter text-[#E0E0E0] hover:text-primary-500 transition-all duration-300"
         >
         ← {{ $t('Projects.backToList') || 'Zpět' }}
       </NuxtLink>
       
-      <h1 class="text-5xl font-black mb-4 uppercase tracking-tighter">
+      <h1 class="text-5xl font-black mb-4 mt-4 uppercase tracking-tighter">
         {{ $t(project.title_key) }}
       </h1>
       

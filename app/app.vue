@@ -1,11 +1,13 @@
 <script setup>
-const title = 'David Hrbacek Portfolio'
-const description = 'Portfolio of David Hrbacek'
-const siteUrl = 'https://www.davidhrbacek.dev/' 
+const title = 'David Hrbáček | Programátor'
+const description = 'Portfolio programátora Davida Hrbáčka se zaměřením na moderní webové aplikace, hry a desktopové aplikace. Podívejte se na mé projekty.'
+const siteUrl = 'https://www.davidhrbacek.dev' 
 
 useHead({
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'author', content: 'David Hrbáček' },
+    { name: 'robots', content: 'index, follow' }
   ],
   link: [{ rel: 'icon', href: '/logo.svg' }],
   htmlAttrs: { lang: 'cs' }
@@ -13,12 +15,16 @@ useHead({
 
 useSeoMeta({
   title,
-  description,
   ogTitle: title,
+  description,
   ogDescription: description,
-  ogImage: `${siteUrl}/logo.svg`,
-  twitterImage: `${siteUrl}/logo.svg`,
-  twitterCard: `${siteUrl}/images/ja.jpg`, 
+  ogType: 'website',
+  ogUrl: siteUrl,
+  ogImage: `${siteUrl}/og-image.jpg`, 
+  twitterCard: 'summary_large_image',
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: `${siteUrl}/og-image.jpg`,
 })
 </script>
 
