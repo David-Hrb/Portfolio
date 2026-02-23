@@ -1,4 +1,5 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/nuxt'
 const title = 'David Hrbáček | Programátor'
 const description = 'Portfolio programátora Davida Hrbáčka se zaměřením na moderní webové aplikace, hry a desktopové aplikace. Podívejte se na mé projekty.'
 const siteUrl = 'https://www.davidhrbacek.dev' 
