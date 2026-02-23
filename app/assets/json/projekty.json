@@ -41,7 +41,7 @@
         "linktopage": "/pages/"
     },
     {
-        "id": "Scan The Result",
+        "id": "Scan_The_Result",
         "title_key": "Projects.list.str.title",
         "desc_key": "Projects.list.str.description",
         "technologies": ["Python", "JavaScript", "HTML", "CSS"],
@@ -55,7 +55,7 @@
         "linktopage": "/pages/"
     },
     {
-        "id": "Old Portfolio",
+        "id": "Old_Portfolio",
         "title_key": "Projects.list.Old_portfolio.title",
         "desc_key": "Projects.list.Old_portfolio.description",
         "technologies": ["HTML", "CSS", "JavaScript"],
@@ -69,7 +69,7 @@
         "linktopage": "/pages/"
     },
     {
-        "id": "Biathlon Game",
+        "id": "Biathlon_Game",
         "title_key": "Projects.list.Biathlon_Game.title",
         "desc_key": "Projects.list.Biathlon_Game.description",
         "technologies": ["Unity", "C#", "3D Modeling"],

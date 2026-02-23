@@ -34,6 +34,7 @@
         "paragraphFull": "Toto jsou moje projekty, které jsem vytvořil. Některé z nich jsou školní projekty, jiné jsou osobní projekty, na kterých jsem pracoval ve svém volném čase. Všechny projekty jsou vytvořeny s cílem zlepšit mé programovací dovednosti a získat zkušenosti s různými technologiemi.",
         "moreText": "Více o projektu",
         "buttonText": "Všechny projekty",
+        "backToList": "Zpět na seznam projektu",
         "list": {
             "racing_sim": {
                 "title": "Motorsport Manager",

@@ -85,7 +85,7 @@
               <div v-else></div>
 
               <NuxtLink 
-                :to="localePath(item.linktopage)" 
+                :to="localePath(`/projects/${item.id}`)" 
                 class="text-xs font-bold uppercase tracking-widest text-[#E0E0E0] hover:text-primary-500 transition-all relative group"
               >
                 {{ $t('Projects.moreText') }} &#8594;
