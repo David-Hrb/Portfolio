@@ -34,6 +34,8 @@
     "paragraphFull": "These are the projects I have created. Some are school assignments, while others are personal projects I've worked on in my free time. All of them were built with the goal of improving my programming skills and gaining experience with various technologies.",
     "moreText": "Project details",
     "buttonText": "All projects",
+    "backToList": "Back to project list",
+    "GithubButtonText": "View on Github",
     "list": {
       "racing_sim": {
         "title": "Motorsport Manager",

@@ -35,6 +35,7 @@
         "moreText": "Více o projektu",
         "buttonText": "Všechny projekty",
         "backToList": "Zpět na seznam projektu",
+        "GithubButtonText": "Zobrazit na Githubu",
         "list": {
             "racing_sim": {
                 "title": "Motorsport Manager",

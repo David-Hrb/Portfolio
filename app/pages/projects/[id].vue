@@ -66,9 +66,9 @@ useSeoMeta({
         <a 
           :href="project.links.github" 
           target="_blank" 
-          class="inline-block px-8 py-4 bg-primary-500 text-black font-bold rounded-full hover:bg-primary-400 transition-colors"
+          class="inline-flex items-center justify-center px-8 py-5 rounded-full bg-[#E0E0E0] text-[#111111] font-bold uppercase tracking-widest text-md hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg"
         >
-          View Source on GitHub
+          {{ $t('Projects.GithubButtonText') }}
         </a>
       </div>
     </div>
