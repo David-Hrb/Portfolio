@@ -35,4 +35,5 @@ useSeoMeta({
   <NuxtPage />
   <UToaster />
   <Footer />
+  <Analytics/>
 </template>
