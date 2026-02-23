@@ -1,27 +1,24 @@
 <script setup>
+const title = 'David Hrbacek Portfolio'
+const description = 'Portfolio of David Hrbacek'
+const siteUrl = 'https://www.davidhrbacek.dev/' 
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
-  link: [
-    { rel: 'icon', href: '/logo.svg' }
-  ],
-  htmlAttrs: {
-    lang: 'en'
-  }
+  link: [{ rel: 'icon', href: '/logo.svg' }],
+  htmlAttrs: { lang: 'cs' }
 })
-
-const title = 'David Hrbacek Portfolio'
-const description = 'Portfolio of David Hrbacek'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: '/logo.svg',
-  twitterImage: '/logo.svg',
-  twitterCard: '/logo.svg'
+  ogImage: `${siteUrl}/logo.svg`,
+  twitterImage: `${siteUrl}/logo.svg`,
+  twitterCard: `${siteUrl}/images/ja.jpg`, 
 })
 </script>
 
