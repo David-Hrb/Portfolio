@@ -3,10 +3,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/sitemap'
   ],
   devtools: {
     enabled: true
+  },
+
+  site: { 
+    url: 'https://davidhrbacek.dev', 
+    name: 'David Hrbáček' 
   },
 
   css: ['~/assets/css/main.css'],
