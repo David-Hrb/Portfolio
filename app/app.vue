@@ -10,7 +10,7 @@ useHead({
     { name: 'author', content: 'David Hrbáček' },
     { name: 'robots', content: 'index, follow' }
   ],
-  link: [{ rel: 'icon', href: '/logo.svg' }],
+  link: [{ rel: 'icon', href: '/logo.ico', sizes: 'any' }],
   htmlAttrs: { lang: 'cs' }
 })
 
