@@ -330,7 +330,7 @@
 </template>
 
 <script setup lang="ts">
-import image from '~/assets/images/ja.jpg'
+import image from '~/assets/images/ja.webp'
 import projektyData from '~/assets/json/projekty.json'
 const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()

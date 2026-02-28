@@ -17,7 +17,7 @@
         "title_key": "Projects.list.portfolio.title",
         "desc_key": "Projects.list.portfolio.description",
         "technologies": ["Nuxt.js", "Vue.js", "JavaScript", "TypeScript", "Tailwind CSS"],
-        "pictures": ["portfolio.png"],
+        "pictures": ["portfolio.webp"],
         "links": {
             "github": "https://github.com/David-Hrb/Portfolio"
         },
@@ -59,7 +59,7 @@
         "title_key": "Projects.list.Old_portfolio.title",
         "desc_key": "Projects.list.Old_portfolio.description",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "pictures": ["oldPortfolio1.JPG", "oldPortfolio2.JPG", "oldPortfolio3.JPG"],
+        "pictures": ["oldPortfolio1.webp", "oldPortfolio2.webp", "oldPortfolio3.webp"],
         "links": {
             "github": "https://github.com/maxikbe/TheShimmer"
         },
@@ -73,7 +73,7 @@
         "title_key": "Projects.list.Biathlon_Game.title",
         "desc_key": "Projects.list.Biathlon_Game.description",
         "technologies": ["Unity", "C#", "3D Modeling"],
-        "pictures": ["biathlon.jpg", "biathlon1.png", "biathlon2.png", "biathlon3.png"],
+        "pictures": ["biathlon.webp", "biathlon1.webp", "biathlon2.webp", "biathlon3.webp"],
         "links": {
             
         },
